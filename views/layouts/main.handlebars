@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiReview</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+    
+<header class="container">
+    <nav>
+        <ul>
+          <li><h1>MiReview</h1></li>
+        </ul>
+        <ul>
+          <!-- Only show if user is logged out -->
+          {{#if !logged_in}}
+          <li><a href="#">Log In</a></li>
+          {{/if}}
+          <li><a href="#">Reviews</a></li>
+          <!-- Only show if user is logged in -->
+          {{#if logged_in}}
+          <li><a href="#">Post ➕</a></li>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Log Out</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+</header>
+
+<main>
+    {{{ body }}}
+</main>
+
+<footer class="container">
+    <p class="centered">Made with ❤️ ©2024</p>
+</footer>
+
+</body>
+</html>
