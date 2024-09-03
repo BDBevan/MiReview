@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiReview</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
@@ -15,9 +16,9 @@
         </ul>
         <ul>
           <!-- Only show if user is logged out -->
-          {{#if !logged_in}}
+          {{#unless logged_in}}
           <li><a href="#">Log In</a></li>
-          {{/if}}
+          {{/unless}}
           <li><a href="#">Reviews</a></li>
           <!-- Only show if user is logged in -->
           {{#if logged_in}}
