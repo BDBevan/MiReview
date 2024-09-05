@@ -12,14 +12,14 @@
 <header class="container">
     <nav>
         <ul>
-          <li><h1>MiReview</h1></li>
+          <li><a href="/"><h1>MiReview</h1></a></li>
         </ul>
         <ul>
           <!-- Only show if user is logged out -->
           {{#unless logged_in}}
-          <li><a href="#">Log In</a></li>
+          <li><a href="/login">Log In</a></li>
           {{/unless}}
-          <li><a href="#">Reviews</a></li>
+          <li><a href="/reviews">Reviews</a></li>
           <!-- Only show if user is logged in -->
           {{#if logged_in}}
           <li><a href="#">Post ➕</a></li>
@@ -30,7 +30,7 @@
       </nav>
 </header>
 
-<main>
+<main class="container">
     {{{ body }}}
 </main>
 

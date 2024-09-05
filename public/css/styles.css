@@ -2,8 +2,44 @@
     text-align: center !important;
 }
 
+.centered div {
+    margin: 0 auto;
+}
+
 h1 {
     --pico-font-family: Pacifico, cursive;
     --pico-font-weight: 400;
     --pico-typography-spacing-vertical: 0.5rem;
-  }
+}
+
+.landing {
+    background-image: url('../img/landing.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds shadow around the box */
+    filter: contrast(130%) brightness(90%); /* Adjust contrast and brightness */
+}
+
+.landing p, 
+.landing h2, 
+.landing h3 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black; /* Horizontal shadow, vertical shadow, blur radius, color */
+}
+
+.landing-filter {
+    background-color: rgba(0, 128, 255, 0.03); /* Semi-transparent blue overlay */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.landing-container p {
+    padding: 5px; /* Adjust padding as needed */
+}
+
+.left-aligned {
+    text-align: left;
+}

@@ -1,7 +1,10 @@
 {{#each reviews as |review|}}
-<article class="container centered">
+<article class="centered" data-theme="dark">
     <header>
-        <h2>{{ review.title }}</h2>
+        <hgroup>
+            <h2>{{ review.title }}</h2>
+            <p>A {{ review.media_type }} review..</p>
+        </hgroup>
     </header>
 
     <main>
@@ -9,7 +12,7 @@
     </main>
 
     <footer>
-        <p>Written By: {{ review.user_id }}</p>
+        <p>Written By: {{ review.user.name }}</p>
     </footer>
 </article>
 {{/each}}

@@ -1,7 +1,12 @@
 [
   {
+    "name": "Grok",
+    "email": "grok@x.ai",
+    "password": "Zx2#Kp8@Lm5$Dv1!Hg9%Qy3^Ws7&Ab4*Ec0+Fr6-Nm3/Yt9=Up2!"
+  },
+  {
     "name": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+    "email": "salamander@me.com",
+    "password": "thisisnotasafepassword"
   }
 ]
