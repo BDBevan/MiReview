@@ -1,0 +1,20 @@
+[
+    {  
+        "media_type": "movie",
+        "title": "Avatar 2",
+        "content": "Lorem ipsum...",
+        "user_id": 1
+    },
+    {  
+        "media_type": "series",
+        "title": "Game of Thrones",
+        "content": "dolor sit...",
+        "user_id": 1
+    },
+    {  
+        "media_type": "book",
+        "title": "A Game of Thrones",
+        "content": "amet...",
+        "user_id": 1
+    }
+]

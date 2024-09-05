@@ -1,0 +1,15 @@
+{{#each reviews as |review|}}
+<article class="container centered">
+    <header>
+        <h2>{{ review.title }}</h2>
+    </header>
+
+    <main>
+        <p> {{ review.content }}</p>
+    </main>
+
+    <footer>
+        <p>Written By: {{ review.user_id }}</p>
+    </footer>
+</article>
+{{/each}}
