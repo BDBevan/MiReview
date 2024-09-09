@@ -19,12 +19,14 @@
           {{#unless logged_in}}
           <li><a href="/login">Log In</a></li>
           {{/unless}}
-          <li><a href="/reviews">Reviews</a></li>
           <!-- Only show if user is logged in -->
           {{#if logged_in}}
-          <li><a href="#">Post ➕</a></li>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="/write">Post ➕</a></li>
+          {{/if}}
+          <li><a href="/reviews">Reviews</a></li>
+          {{#if logged_in}}
+          <li><a href="/myprofile">My Profile</a></li>
+          <li><a href="#" id="logout">Log Out</a></li>
           {{/if}}
         </ul>
       </nav>
@@ -37,6 +39,11 @@
 <footer class="container">
     <p class="centered">Made with ❤️ ©2024</p>
 </footer>
+
+<!-- Only include the logout script if the user is logged in -->
+{{#if logged_in}}
+  <script src="/js/logout.js"></script>
+{{/if}}
 
 </body>
 </html>

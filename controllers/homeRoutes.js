@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User, Review } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
@@ -20,8 +20,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-
-router.get('/reviews', withAuth, async (req, res) => {
+router.get('/reviews', async (req, res) => {
   try {
     const reviewData = await Review.findAll({
       order: [['id', 'ASC']],
@@ -40,6 +39,15 @@ router.get('/reviews', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+});
+
+router.get('/write', withAuth, (req, res) => {
+  if (!req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('write');
 });
 
 
