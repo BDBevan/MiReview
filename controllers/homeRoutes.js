@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Review } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -19,6 +19,29 @@ router.get('/', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+router.get('/reviews', withAuth, async (req, res) => {
+  try {
+    const reviewData = await Review.findAll({
+      order: [['id', 'ASC']],
+      include: [{model: User, attributes:['name']}],
+    });
+
+    // console.log(reviewData);
+
+    const reviews = reviewData.map((project) => project.get({ plain: true }));
+    console.log(reviews);
+
+    res.render('reviews', {
+      reviews,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {

@@ -1,0 +1,20 @@
+[
+    {  
+        "media_type": "movie",
+        "title": "Avatar 2",
+        "content": "Ah, \"Avatar 2: The Way of Water,\" where the visuals are so breathtaking, they might just make you forget you're watching a movie about blue, eco-conscious beings with a wardrobe that's more about function than fashion. It's like diving into a nature documentary on Pandora, but with the added bonus of family drama that's as subtle as a Na'vi trying to blend into a human crowd. Visually, it's a smorgasbord for the eyes; story-wise, let's just say it's a good thing Pandora's creatures are so distracting. The movie's heart is in the right place, championing environmentalism with the subtlety of a sledgehammer, but hey, who doesn't love a good message wrapped in a visually stunning package? In short, if you're in for the ride, 'Avatar 2' delivers a spectacle that's more about the journey than the destination, where the destination is a visually spectacular underwater world. Just don't expect to leave with any profound life lessons, unless 'water is cool' counts as one. Rating: 4 out of 5 blue moons. Would watch again, but mainly for the underwater scenes.",
+        "user_id": 1
+    },
+    {  
+        "media_type": "series",
+        "title": "Game of Thrones",
+        "content": "\"Game of Thrones,\" where the only thing more unpredictable than the plot is the weather in Westeros. It's like watching a medieval soap opera where everyone's related, everyone's plotting, and no one's safe from the chop. The characters are so well-developed, you'll find yourself mourning fictional deaths like they were your own kin. The dragons? A visual treat, but let's be honest, it's the human drama that keeps you hooked. It's got more twists than a pretzel factory, and just when you think you've got it figured out, someone else ends up on the Iron Throne, or dead, or both. In short, 'Game of Thrones' is a masterclass in storytelling, where loyalty is as rare as a White Walker's tan, and betrayal is the national sport. Rating: 5 out of 5 dragons. Would watch again, but maybe with a helmet for the emotional rollercoaster.",
+        "user_id": 1
+    },
+    {  
+        "media_type": "book",
+        "title": "Harry Potter",
+        "content": "\"Harry Potter and the Philosopher's Stone,\" where the magic begins, quite literally. It's like if your school letters started arriving by owl post, and instead of detention, you got points for bravery or brains. Rowling spins a yarn that's more addictive than Bertie Bott's Every Flavour Beans, and just as unpredictable. You'll find yourself rooting for an underdog who's more famous than he realizes, in a world where the sport involves flying broomsticks and the school subjects include potion-making and spell-casting. It's a tale of friendship, adventure, and the kind of magic that makes you wish for a Hogwarts acceptance letter. Rating: 5 out of 5 chocolate frogs. Would read again, hoping for a real-life sorting hat experience.",
+        "user_id": 1
+    }
+]
