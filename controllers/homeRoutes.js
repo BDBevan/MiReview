@@ -41,13 +41,9 @@ router.get('/reviews', async (req, res) => {
   }
 });
 
-router.get('/write', withAuth, (req, res) => {
-  if (!req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
+router.get('/post', withAuth, (req, res) => {
 
-  res.render('write');
+  res.render('post', { logged_in: req.session.logged_in });
 });
 
 
