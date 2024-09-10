@@ -47,3 +47,7 @@ h1 {
 .review {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds shadow around the box */
 }
+
+/* .hiddenField {
+    display: none;
+} */

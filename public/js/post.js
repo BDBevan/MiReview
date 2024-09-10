@@ -1,12 +1,13 @@
 /* post form handler */
 const postReviewFormHandler = async (event) => {
-    alert("test!");
     event.preventDefault();
   
+    const media_type = document.querySelector('#media_type').value.trim();
     const title = document.querySelector('#title').value.trim();
     const content = document.querySelector('#review').value.trim();
-    const media_type = "movie"; // change this later
-    const user_id = 2;
+    const user_id = document.querySelector('#user_id').value.trim();
+
+    // const user_name = document.querySelector('#user_name').value.trim();
   
     if (title && content && media_type && user_id) {
       const response = await fetch('/api/post', {
