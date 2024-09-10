@@ -1,0 +1,22 @@
+<section>
+    <form>
+        <fieldset>
+            <select name="media_type" aria-label="Select category" id="media_type" required>
+                <option selected disabled value="">
+                    Select category
+                </option>
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="book">Book</option>
+                <option value="music">Music</option>
+            </select>
+            <input type="text" name="title" id="title" placeholder="Title">
+            <textarea name="review" id="review" placeholder="Write a review about your experience.." aria-label="Write a review"></textarea>
+            <input type="submit" id="postReviewButton" value="Post!">
+            <input type="hidden" id="user_name" value="{{ user_name }}">
+            <input type="hidden" id="user_id" value="{{ user_id }}">
+        </fieldset>
+    </form>
+</section>
+
+<script src="/js/post.js"></script>

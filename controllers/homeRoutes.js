@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Review } = require('../models');
 const withAuth = require('../utils/auth');
+const noAuth = require('../utils/noauth');
 
 router.get('/', async (req, res) => {
   try {
@@ -41,13 +42,17 @@ router.get('/reviews', async (req, res) => {
   }
 });
 
-router.get('/write', withAuth, (req, res) => {
-  if (!req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
+router.get('/post', withAuth, (req, res) => {
 
-  res.render('write');
+  res.render('post', { 
+    logged_in: req.session.logged_in, 
+    user_name: req.session.user_name,
+    user_id: req.session.user_id
+  });
+});
+
+router.get('/register', noAuth, (req, res) => {
+  res.render('register');
 });
 
 
