@@ -32,6 +32,22 @@ You can log in with Mireview at any time to add to your list of reviews for othe
 
 ## Screenshots
 
+Landing page : 
+![Landing_page](https://github.com/user-attachments/assets/02cd7aed-c645-4b8e-930e-816ff20fe80b)
+
+Login page :
+![Login_page](https://github.com/user-attachments/assets/f3a5bb19-9938-42ea-97ce-2d7804ccf9f3)
+
+Register : 
+![Register_page](https://github.com/user-attachments/assets/ce498551-978f-4919-ad4f-b1f6a81401bf)
+
+Reviews page : 
+![Reviews_page](https://github.com/user-attachments/assets/39503f58-53f7-429d-a1df-e130e96c643d)
+
+My Profile page : 
+![User_profile_page](https://github.com/user-attachments/assets/38146f21-d04e-48ae-9c4a-fc9352705485)
+
+
 
 ## Requirements
 
