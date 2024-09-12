@@ -1,16 +1,39 @@
-# MiReview3
+# MiReview 
+
+Welcome to MiReview, an online review tool for all your movie, book and song favorites!
 
 ---
 
-# Challenge Details
+# Product Details
 
-# 15 Project 2: Interactive Full-Stack Application
+With Mireview, you can log in as a guest if you just wish to view users reviews on their favorite movies, books and songs. 
+If you have seen a great movie, read an outstanding book or heard a song you wish to write a review on, you can! Simply register as a new user using MiReview's new user register portal with your email address and password and you're all set!
 
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
+You can log in with Mireview at any time to add to your list of reviews for other users or guests to read. 
 
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+## Product Features
+- Ability to log into MiReview as a guest to read all reviews on books, movies and songs written by registered users.
+- Ability to register yourself as a MiReview user via our register tool to begin creating your own reviews
+- Seamless UI drop down selectors to choose the appropritate category for your review (e.g. Movies, Books, Songs)
+- Ability to log out and log back in to re-view your current reviews, or create new reviews
 
-## Project Requirements
+ ## Technology & Standards Utilised
+
+- Use of node.js and express.js to create RESTful API
+- Use of Handlebars.js in the template engine   
+- Use of GET and Post by way of retreving exiting reviews and users ability to POST new reviews
+- One new library ???
+- The project has an Model View Controller file structure
+- User authentication exists. Ability to create new users. Email and Password validation is in place
+- ENV variables ???
+- Project is deployed to and viewable via render (UI & DB)
+- UI is user friendly, polished and functional
+- Product is interactive allowing user inputs, accept, respond
+
+## Screenshots
+
+
+## Requirements
 
 You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
 
