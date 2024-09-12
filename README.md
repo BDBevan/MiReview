@@ -20,9 +20,9 @@ You and your group will use everything you’ve learned over the past six module
 
 * Use PostgreSQL and the Sequelize ORM for the database. ✅
 
-* Have both GET and POST routes for retrieving and adding new data. ⏳
+* Have both GET and POST routes for retrieving and adding new data. ✅
 
-* Use at least one new library, package, or technology that we haven’t discussed. ⏳
+* Use at least one new library, package, or technology that we haven’t discussed. (Pico CSS?) ✅ ⏳
 
 * Have a folder structure that meets the MVC paradigm. ✅
 
@@ -36,7 +36,7 @@ You and your group will use everything you’ve learned over the past six module
 
 * Be responsive. ✅
 
-* Be interactive (i.e., accept and respond to user input). ⏳
+* Be interactive (i.e., accept and respond to user input). ✅
 
 * Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.). ✅
 

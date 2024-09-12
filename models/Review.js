@@ -1,6 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// Defines the Review table in the database
+
 class Review extends Model {}
 
 Review.init(

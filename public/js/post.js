@@ -1,4 +1,4 @@
-/* post form handler */
+/* Form handler */
 const postReviewFormHandler = async (event) => {
     event.preventDefault();
   
@@ -6,8 +6,6 @@ const postReviewFormHandler = async (event) => {
     const title = document.querySelector('#title').value.trim();
     const content = document.querySelector('#review').value.trim();
     const user_id = document.querySelector('#user_id').value.trim();
-
-    // const user_name = document.querySelector('#user_name').value.trim();
   
     if (title && content && media_type && user_id) {
       const response = await fetch('/api/post', {
@@ -17,7 +15,7 @@ const postReviewFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        alert("Successfully posted a review!");
+        // alert("Successfully posted a review!"); /* include or not */
         document.location.replace('/reviews');
       } else {
         alert('Failed to post review');
@@ -25,5 +23,5 @@ const postReviewFormHandler = async (event) => {
     }
   };
 
-/* button event listener */
+/* Button event listener */
 document.getElementById("postReviewButton").addEventListener('click', postReviewFormHandler);

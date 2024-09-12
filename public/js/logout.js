@@ -1,3 +1,4 @@
+// Send POST request to back-end server route (destroys user session = logout)
 const logout = async () => {
   const response = await fetch('/api/users/logout', {
     method: 'POST',

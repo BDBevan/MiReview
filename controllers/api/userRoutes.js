@@ -29,7 +29,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.user_name = userData.name;
-      // req.session.user_email = userData.email;
+      req.session.user_email = userData.email;
       req.session.logged_in = true;
       
       res.json({ user: userData, message: 'You are now logged in!' });
@@ -76,6 +76,7 @@ router.post('/register', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = newUser.id;
       req.session.user_name = newUser.name;
+      req.session.user_email = newUser.email;
       req.session.logged_in = true;
       
       res.status(201).json({ 
