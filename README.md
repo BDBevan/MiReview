@@ -25,6 +25,7 @@ You can log in with Mireview at any time to add to your list of reviews for othe
 - The project has an Model View Controller file structure
 - User authentication exists. Ability to create new users. Email and Password validation is in place
 - ENV variables are used to protect user information via connection JS
+- Utilising 3rd library called Moment JS to display server date/time stamp
 - Project is deployed to and viewable via render (UI & DB)
 - UI is user friendly, polished and functional
 - Product is interactive allowing user inputs, accept, respond
