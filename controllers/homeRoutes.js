@@ -86,12 +86,16 @@ router.get('/profile', withAuth, async (req, res) => {
       }
     });
 
+    // Add the current date and time
+    const currentDate = new Date();
+
     // Render the profile page with the review count
     res.render('profile', {
       logged_in: req.session.logged_in,
       user_name: req.session.user_name,
       user_email: req.session.user_email,
-      total_reviews: reviewCount
+      total_reviews: reviewCount,
+      someDate: currentDate
     });
 
   } catch (error) {
