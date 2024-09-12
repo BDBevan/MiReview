@@ -1,5 +1,8 @@
+const moment = require('moment');
+
 module.exports = {
-/* 
-  helper code here 
-*/
+  formatDate: function(date, format) {
+    if (!date) return '';
+    return moment(date).format(format);
+  }
 };
