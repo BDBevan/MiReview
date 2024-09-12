@@ -1,8 +1,9 @@
-const moment = require('moment');
+const moment = require('moment-timezone');
 
 module.exports = {
   formatDate: function(date, format) {
     if (!date) return '';
-    return moment(date).format(format);
+    // Set the timezone to Sydney, Australia
+    return moment(date).tz('Australia/Sydney').format(format);
   }
 };
